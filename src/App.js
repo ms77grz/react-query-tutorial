@@ -8,6 +8,7 @@ import RQSuperHeroes from './pages/RQSuperHeroes';
 import SuperHeroes from './pages/SuperHeroes';
 import HeroesOnClick from './pages/HeroesOnClick';
 import RQSuperHeroe from './pages/RQSuperHeroe';
+import ParallelQueries from './pages/ParallelQueries';
 
 const queryClient = new QueryClient();
 
@@ -22,6 +23,7 @@ const App = () => {
           <Route path='rq-super-heroes' element={<RQSuperHeroes />} />
           <Route path='rq-super-heroes/:heroId' element={<RQSuperHeroe />} />
           <Route path='heroes-on-click' element={<HeroesOnClick />} />
+          <Route path='parallel-queries' element={<ParallelQueries />} />
           <Route path='*' element={<h2>Error 404!</h2>} />
         </Routes>
       </BrowserRouter>

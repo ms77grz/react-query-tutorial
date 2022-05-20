@@ -16,6 +16,9 @@ const Navigation = () => {
         <li>
           <NavLink to='/heroes-on-click'>Heroes On Click</NavLink>
         </li>
+        <li>
+          <NavLink to='/parallel-queries'>Parallel Queries</NavLink>
+        </li>
       </ul>
     </nav>
   );
