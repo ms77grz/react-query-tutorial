@@ -49,3 +49,11 @@ nav ul li {
   list-style-type: none;
   margin-right: 16px;
 }
+
+.active {
+  color: blue;
+}
+
+a {
+  color: black;
+}
