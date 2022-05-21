@@ -19,6 +19,14 @@ const Navigation = () => {
         <li>
           <NavLink to='/parallel-queries'>Parallel Queries</NavLink>
         </li>
+        <li>
+          <NavLink to='/dynamic-parallel-queries'>
+            Dynamic Parallel Queries
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to='/dependent-queries'>Dependent Queries</NavLink>
+        </li>
       </ul>
     </nav>
   );

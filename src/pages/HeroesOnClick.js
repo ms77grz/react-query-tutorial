@@ -1,10 +1,17 @@
-import { useSuperHeroesData } from '../hooks/useSuperHeroesData';
+import axios from 'axios';
+import { useQuery } from 'react-query';
+
+const fetchSuperHeroes = () => axios.get('http://localhost:4000/superheroes');
 
 const HeroesOnClick = () => {
-  const { isLoading, data, isError, error, refetch } = useSuperHeroesData({
-    enabled: false,
-    select: data => data.data.map(hero => hero.alterEgo),
-  });
+  const { isLoading, data, isError, error, refetch } = useQuery(
+    'super-heroes-btn',
+    fetchSuperHeroes,
+    {
+      enabled: false,
+      select: data => data.data.map(hero => hero.alterEgo),
+    }
+  );
 
   if (isLoading) {
     return <h2>Loading...</h2>;
