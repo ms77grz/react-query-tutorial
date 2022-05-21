@@ -1,7 +1,14 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useSuperHeroesData } from '../hooks/useSuperHeroesData';
+import {
+  useSuperHeroesData,
+  useAddSuperHeroData,
+} from '../hooks/useSuperHeroesData';
 
 const RQSuperHeroes = () => {
+  const [name, setName] = useState('');
+  const [alterEgo, setAlterEgo] = useState('');
+
   const onSuccess = data => {
     console.log('Perform side effect after data fetching', data);
   };
@@ -15,6 +22,16 @@ const RQSuperHeroes = () => {
     onError,
   });
 
+  const { mutate: addHero } = useAddSuperHeroData();
+
+  const handleAddHeroClick = () => {
+    if (!name || alterEgo) {
+      alert('empty values');
+      return;
+    }
+    addHero({ name, alterEgo });
+  };
+
   if (isLoading) {
     return <h2>Loading...</h2>;
   }
@@ -26,6 +43,19 @@ const RQSuperHeroes = () => {
   return (
     <>
       <h2>RQ Super Heroes Page</h2>
+      <div>
+        <input
+          type='text'
+          value={name}
+          onChange={e => setName(e.target.value)}
+        />
+        <input
+          type='text'
+          value={alterEgo}
+          onChange={e => setAlterEgo(e.target.value)}
+        />
+        <button onClick={handleAddHeroClick}>Add Hero</button>
+      </div>
       {data?.data.map(hero => (
         <div key={hero.id}>
           <Link to={`/rq-super-heroes/${hero.id}`}>{hero.name}</Link>

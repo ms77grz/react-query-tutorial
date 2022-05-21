@@ -1,16 +1,46 @@
 {
   "superheroes": [
-    { "id": 1, "name": "Batman", "alterEgo": "Bruce Wayne" },
-    { "id": 2, "name": "Superman", "alterEgo": "Clark Kent" },
-    { "id": 3, "name": "Wonder Woman", "alterEgo": "Princess Diana" },
-    { "id": 4, "name": "Iron Man", "alterEgo": "Tony Stark" }
+    {
+      "id": 1,
+      "name": "Batman",
+      "alterEgo": "Bruce Wayne"
+    },
+    {
+      "id": 2,
+      "name": "Superman",
+      "alterEgo": "Clark Kent"
+    },
+    {
+      "id": 3,
+      "name": "Wonder Woman",
+      "alterEgo": "Princess Diana"
+    },
+    {
+      "id": 4,
+      "name": "Iron Man",
+      "alterEgo": "Tony Stark"
+    }
   ],
   "friends": [
-    { "id": 1, "name": "Chandler Bing" },
-    { "id": 2, "name": "Joey Tribbiani" },
-    { "id": 3, "name": "Rachel Green" }
+    {
+      "id": 1,
+      "name": "Chandler Bing"
+    },
+    {
+      "id": 2,
+      "name": "Joey Tribbiani"
+    },
+    {
+      "id": 3,
+      "name": "Rachel Green"
+    }
   ],
-  "users": [{ "id": "alex@example.com", "channelId": "programmers" }],
+  "users": [
+    {
+      "id": "alex@example.com",
+      "channelId": "programmers"
+    }
+  ],
   "channels": [
     {
       "id": "programmers",
@@ -18,12 +48,33 @@
     }
   ],
   "colors": [
-    { "id": 1, "label": "violet" },
-    { "id": 2, "label": "indigo" },
-    { "id": 3, "label": "blue" },
-    { "id": 4, "label": "green" },
-    { "id": 5, "label": "yellow" },
-    { "id": 6, "label": "orange" },
-    { "id": 7, "label": "red" }
+    {
+      "id": 1,
+      "label": "violet"
+    },
+    {
+      "id": 2,
+      "label": "indigo"
+    },
+    {
+      "id": 3,
+      "label": "blue"
+    },
+    {
+      "id": 4,
+      "label": "green"
+    },
+    {
+      "id": 5,
+      "label": "yellow"
+    },
+    {
+      "id": 6,
+      "label": "orange"
+    },
+    {
+      "id": 7,
+      "label": "red"
+    }
   ]
 }

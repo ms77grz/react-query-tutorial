@@ -25,8 +25,8 @@ const HeroesOnClick = () => {
     <>
       <h2>Fetch Heroes On Click</h2>
       <button onClick={refetch}>fetch heroes</button>
-      {data?.map(hero => (
-        <div key={hero}>{hero}</div>
+      {data?.map((hero, i) => (
+        <div key={i}>{hero}</div>
       ))}
     </>
   );
