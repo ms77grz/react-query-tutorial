@@ -27,6 +27,9 @@ const Navigation = () => {
         <li>
           <NavLink to='/dependent-queries'>Dependent Queries</NavLink>
         </li>
+        <li>
+          <NavLink to='/paginated-queries'>Paginated Queries</NavLink>
+        </li>
       </ul>
     </nav>
   );

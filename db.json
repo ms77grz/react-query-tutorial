@@ -16,5 +16,14 @@
       "id": "programmers",
       "courses": ["html", "css", "javascript", "react"]
     }
+  ],
+  "colors": [
+    { "id": 1, "label": "violet" },
+    { "id": 2, "label": "indigo" },
+    { "id": 3, "label": "blue" },
+    { "id": 4, "label": "green" },
+    { "id": 5, "label": "yellow" },
+    { "id": 6, "label": "orange" },
+    { "id": 7, "label": "red" }
   ]
 }
