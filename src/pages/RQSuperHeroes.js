@@ -25,7 +25,7 @@ const RQSuperHeroes = () => {
   const { mutate: addHero } = useAddSuperHeroData();
 
   const handleAddHeroClick = () => {
-    if (!name || alterEgo) {
+    if (!name || !alterEgo) {
       alert('empty values');
       return;
     }
@@ -44,17 +44,19 @@ const RQSuperHeroes = () => {
     <>
       <h2>RQ Super Heroes Page</h2>
       <div>
-        <input
-          type='text'
-          value={name}
-          onChange={e => setName(e.target.value)}
-        />
-        <input
-          type='text'
-          value={alterEgo}
-          onChange={e => setAlterEgo(e.target.value)}
-        />
-        <button onClick={handleAddHeroClick}>Add Hero</button>
+        <form>
+          <input
+            type='text'
+            value={name}
+            onChange={e => setName(e.target.value)}
+          />
+          <input
+            type='text'
+            value={alterEgo}
+            onChange={e => setAlterEgo(e.target.value)}
+          />
+          <button onClick={handleAddHeroClick}>Add Hero</button>
+        </form>
       </div>
       {data?.data.map(hero => (
         <div key={hero.id}>

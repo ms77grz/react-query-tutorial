@@ -19,6 +19,16 @@
       "id": 4,
       "name": "Iron Man",
       "alterEgo": "Tony Stark"
+    },
+    {
+      "name": "HakerMan",
+      "alterEgo": "Esker Khan",
+      "id": 5
+    },
+    {
+      "name": "The Flash",
+      "alterEgo": "Some Guy",
+      "id": 6
     }
   ],
   "friends": [
@@ -44,7 +54,12 @@
   "channels": [
     {
       "id": "programmers",
-      "courses": ["html", "css", "javascript", "react"]
+      "courses": [
+        "html",
+        "css",
+        "javascript",
+        "react"
+      ]
     }
   ],
   "colors": [
