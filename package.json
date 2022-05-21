@@ -1,6 +1,5 @@
 {
   "name": "react-query-tutorial",
-  "proxy": "http://192.168.100.206",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
