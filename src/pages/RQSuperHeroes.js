@@ -24,7 +24,8 @@ const RQSuperHeroes = () => {
 
   const { mutate: addHero } = useAddSuperHeroData();
 
-  const handleAddHeroClick = () => {
+  const handleAddHeroClick = e => {
+    e.preventDefault();
     if (!name || !alterEgo) {
       alert('empty values');
       return;
