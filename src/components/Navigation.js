@@ -30,6 +30,9 @@ const Navigation = () => {
         <li>
           <NavLink to='/paginated-queries'>Paginated Queries</NavLink>
         </li>
+        <li>
+          <NavLink to='/infinite-queries'>Infinite Queries</NavLink>
+        </li>
       </ul>
     </nav>
   );
