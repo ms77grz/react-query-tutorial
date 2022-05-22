@@ -19,16 +19,6 @@
       "id": 4,
       "name": "Iron Man",
       "alterEgo": "Tony Stark"
-    },
-    {
-      "name": "Adam",
-      "alterEgo": "Red One",
-      "id": 5
-    },
-    {
-      "name": "Eva",
-      "alterEgo": "SuperGirl",
-      "id": 6
     }
   ],
   "friends": [
@@ -54,12 +44,7 @@
   "channels": [
     {
       "id": "programmers",
-      "courses": [
-        "html",
-        "css",
-        "javascript",
-        "react"
-      ]
+      "courses": ["html", "css", "javascript", "react"]
     }
   ],
   "colors": [
