@@ -31,6 +31,8 @@ const RQSuperHeroes = () => {
       return;
     }
     addHero({ name, alterEgo });
+    setName('');
+    setAlterEgo('');
   };
 
   if (isLoading) {
